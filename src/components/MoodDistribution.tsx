@@ -35,9 +35,11 @@ function MoodDistribution({ entries }: { entries: Entries }) {
             );
           })
         )}
-        <span className='text-base-content/70'>
-          {total} {total === 1 ? 'day' : 'days'} recorded
-        </span>
+        {total > 1 && (
+          <span className='text-base-content/70'>
+            {total} {total === 1 ? 'day' : 'days'} recorded
+          </span>
+        )}
       </div>
     </div>
   );
