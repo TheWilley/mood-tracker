@@ -28,8 +28,8 @@ function MoodDistribution({ entries }: { entries: Entries }) {
                   max={total}
                   aria-label={`${m.title}: ${percent}%`}
                 ></progress>
-                <span className='w-10 text-xs text-right shrink-0'>
-                  {percent}%
+                <span className='w-20 text-xs text-right shrink-0'>
+                  {percent}% · ({count})
                 </span>
               </div>
             );
