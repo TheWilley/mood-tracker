@@ -75,9 +75,8 @@ function Export({ entries, importEntries }: ExportProps) {
           Clear all data
         </button>
         <p className='text-base-content/70 mt-5'>
-          Saved in this browser on this site. Clearing site data can delete
-          entries. Other browsers or devices will not show them. No cloud backup
-          or sync.
+          Permanently deletes this tool's entries in this browser. Cannot be
+          undone.
         </p>
       </div>
     </div>
