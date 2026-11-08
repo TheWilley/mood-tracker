@@ -1,14 +1,14 @@
 import { moods } from '../utils/constants.ts';
 import type { Entries } from '../types/types.ts';
 
-function Distribution({ entries }: { entries: Entries }) {
+function MoodCount({ entries }: { entries: Entries }) {
   const all = Object.values(entries);
   const count = (slug: string) => all.filter((e) => e.mood === slug).length;
 
   return (
     <div className='card w-full bg-base-100 border border-base-content/20 rounded-box'>
       <div className='card-body'>
-        <h2 className='card-title'>Mood distribution</h2>
+        <h2 className='card-title'>Mood count</h2>
         <ul>
           {moods.map((mood) => (
             <li className='flex justify-between mb-2' key={mood.slug}>
@@ -26,4 +26,4 @@ function Distribution({ entries }: { entries: Entries }) {
   );
 }
 
-export default Distribution;
+export default MoodCount;
