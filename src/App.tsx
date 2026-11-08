@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import type { Entries, Entry } from './types/types.ts';
 import { todayKey } from './utils/date.ts';
 import { localStorageKey } from './utils/constants.ts';
+import Search from './components/Search.tsx';
 
 function App() {
   // https://www.geeksforgeeks.org/reactjs/how-to-persist-state-with-local-or-session-storage-in-react/
@@ -53,6 +54,7 @@ function App() {
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Search entries={entries} />
             <Recents entries={entries} />
             <Distribution entries={entries} />
           </div>
