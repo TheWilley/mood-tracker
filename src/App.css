@@ -20,3 +20,12 @@ calendar-month::part(selected) {
     border-radius: 0.5rem;
     font-weight: 700;
 }
+
+calendar-month::part(button) {
+    inline-size: 100%;
+    block-size: 2.5rem;
+}
+
+calendar-month::part(td) {
+    padding: 0.125rem;
+}
