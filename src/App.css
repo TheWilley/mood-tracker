@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@plugin "daisyui" {
+    themes: light --default,
+    dark --prefersdark,
+    night;
+}
+
+calendar-month::part(today) {
+    background: transparent;
+    color: inherit;
+}
+
+calendar-month::part(selected) {
+    background: transparent;
+    color: inherit;
+    box-shadow: inset 0 0 0 2px color-mix(in oklab, var(--color-success) 85%, transparent),
+    inset 0 0 0 4px var(--color-base-100),
+    inset 0 0 10px 2px color-mix(in oklab, var(--color-success) 20%, transparent);
+    border-radius: 0.5rem;
+    font-weight: 700;
+}
